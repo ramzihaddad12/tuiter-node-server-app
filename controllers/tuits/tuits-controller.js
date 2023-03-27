@@ -6,6 +6,7 @@ const createTuit = (req, res) => {
     newTuit._id = (new Date()).getTime()+'';
     newTuit.likes = 0;
     newTuit.liked = false;
+    newTuit.image = "nasa.png"
     tuits.push(newTuit);
     res.json(newTuit);
 }
